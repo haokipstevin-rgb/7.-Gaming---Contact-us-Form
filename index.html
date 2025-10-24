@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact Gamer Hub</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Inter:wght@400;600&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header id="mainHeader">
+    <div class="logo">
+      <img src="logo.png" alt="Gamer Hub Logo">
+      <h1>Saiyon Gamer Hub</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Games</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contact-card">
+    <div class="contact-info">
+      <h2>Contact Gamer Hub</h2>
+      <p>We’re here to help with <span class="highlight">bug reports</span>,
+        <span class="highlight">feedback</span>, or
+        <span class="highlight">partnerships</span>.
+        Share your message and our team will respond soon!
+      </p>
+      <p>Email us directly at <strong>support@gamerhub.com</strong> or fill out the form.</p>
+    </div>
+
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="your name here" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Type your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <script>
+    // Header transparency on scroll
+    window.addEventListener('scroll', () => {
+      const header = document.getElementById('mainHeader');
+      if (window.scrollY > 50) header.classList.add('transparent');
+      else header.classList.remove('transparent');
+    });
+  </script>
+</body>
+
+</html>
